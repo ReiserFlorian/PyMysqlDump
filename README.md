@@ -22,3 +22,5 @@ You need to create a `client.cnf` mysql configuration file, which stores the cre
 mysql_config_editor set --login-path=client --host=localhost --user=<USER> --password
 ```
 _The script `mysql_config_editor` is located in the **bin** subdirectory of your mysql location_ 
+
+Currently, this script is only working, if you execute the script on the host, where your mysql server is running. In addition, you must ensure, that your mysql server was called without the `--secure-file-priv` option. 
