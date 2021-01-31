@@ -15,3 +15,9 @@ Please install them with the following commands:
 pip install mysql-connector-python
 pip install myloginpath
 ```
+
+You need to create a `client.cnf` mysql configuration file, which stores the crediantials of an administrator account. These encrypted access information are used by the PyMysqlDump scripts to dump your database as well as load the database from an existing dump. To do this, please use the following command:
+
+```
+mysql_config_editor set --login-path=client --host=localhost --user=<USER> --password
+```
